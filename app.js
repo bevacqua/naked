@@ -2,6 +2,7 @@
 
 var http = require('http');
 var port = process.env.PORT || 4000;
+var protocol = process.env.PROTOCOL || 'http';
 
 http.createServer(handler).listen(port, listening);
 
@@ -10,7 +11,7 @@ function listening () {
 }
 
 function handler (req, res) {
-  redirect(res, 301, 'http://' + process.env.HOST + req.url);
+  redirect(res, 301, protocol + '://' + process.env.HOST + req.url);
 }
 
 function redirect (res, status, url) {

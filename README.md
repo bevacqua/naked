@@ -1,6 +1,6 @@
-# get-naked
+# naked
 
-This repository merely redirects requests from `blog.ponyfoo.com` to `ponyfoo.com`.
+This app merely redirects any requests into `process.env.HOST` using `process.env.PROTOCOL`.
 
 # License
 
