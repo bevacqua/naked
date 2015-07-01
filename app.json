@@ -1,0 +1,17 @@
+{
+  "name": "Node.js domain redirector",
+  "description": "Redirects all request on a given host to another host",
+  "repository": "https://github.com/bevacqua/naked",
+  "keywords": ["node", "express", "static", "naked", "www", "non-www", "apex", "domain", "redirect", "redirector"],
+  "env": {
+    "HOST": {
+      "description": "A host name you want to redirect all requests to.",
+      "value": "example.com"
+    },
+    "PROTOCOL": {
+      "description": "The protocol you want to redirect requests with.",
+      "value": "http",
+      "required": false
+    }
+  }
+}
